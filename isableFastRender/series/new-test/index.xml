@@ -1,0 +1,7 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>New test - Series - Lazy Blog</title>
+        <link>http://localhost:1313/series/new-test/</link>
+        <description>New test - Series - Lazy Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 05 Feb 2024 23:43:24 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/series/new-test/" rel="self" type="application/rss+xml" /></channel>
+</rss>

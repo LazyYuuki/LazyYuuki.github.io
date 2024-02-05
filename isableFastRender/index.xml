@@ -1,16 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>LazyYuuki&#39;s Blog</title>
+        <title>Lazy Blog</title>
         <link>http://localhost:1313/</link>
-        <description>LazyYuuki&#39;s Blog</description>
+        <description>A blog about all thing engineering and startup related</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 05 Feb 2024 23:43:24 &#43;0800</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>Test</title>
-    <link>http://localhost:1313/posts/test/</link>
-    <pubDate>Mon, 05 Feb 2024 23:43:24 &#43;0800</pubDate><author>
-        <name>Author</name>
-    </author><guid>http://localhost:1313/posts/test/</guid>
-    <description><![CDATA[This is a test of the contentTo see if everything works]]></description>
-</item></channel>
+        </channel>
 </rss>
