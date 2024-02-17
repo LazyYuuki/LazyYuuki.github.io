@@ -3,7 +3,7 @@ baseURL = "https://LazyYuuki.github.io/"
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
-title        = "Lazy Blog"
+title        = "The Lazy Blog"
 # Change the default theme to be use when building the site with Hugo
 theme = "DoIt"
 
@@ -46,7 +46,7 @@ theme = "DoIt"
 
   [params.app]
     noFavicon = false
-    title     = "Lazy Blog"
+    title     = "The Lazy Blog"
 
   [params.header]
     desktopMode     = "fixed"
@@ -54,7 +54,7 @@ theme = "DoIt"
     themeChangeMode = "select"
 
     [params.header.title]
-      name = "Lazy Blog"
+      name = "The Lazy Blog"
       post = "😴"
 
 [params.footer]
@@ -179,6 +179,15 @@ theme = "DoIt"
     name       = "Series"
     url        = "/series/"
     weight     = 3
+  [[menu.main]]
+    identifier = "bucket-list"
+    name       = "My Bucket List"
+    url        = "/bucket-list/"
+    weight     = 4
+  [[menu.main]]
+    identifier = "about"
+    name       = "About me"
+    url        = "/about/"
 
 # Markup related configuration in Hugo
 [markup]

@@ -1,0 +1,16 @@
+# A list of things I want to do
+
+Here are a mix of some aspiration I have in life, some random shower thought, and some spontaneous things I would like to do with my life before I kick the bucket.
+
+1. [ ] Start a tech company
+2. [ ] Establish a non-profit organisation to digitalise mountainous area in Vietnam
+3. [ ] Contribute at least USD$10k to impactful open source projects
+4. [x] Make a personal blog
+5. [ ] Write a technical book
+6. [ ] Write a start-up book
+7. [ ] Give a Ted talk about something interesting
+8. [ ] Learn how to fly a plane
+9. [ ] Try out traveling first class on an airplane 
+10. [ ] Try out driving a supercar
+11. [ ] Start a Vietnamese streetfood chain company
+12. [ ] Start a relatively popular open source project (min 1k stars)
