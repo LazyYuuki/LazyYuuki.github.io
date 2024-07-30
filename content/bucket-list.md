@@ -23,3 +23,7 @@ Here are a mix of some aspiration I have in life, some random shower thought, an
 19. [ ] Learn how to do a handstand
 20. [ ] Get a Master
 21. [ ] Get a PhD
+22. [ ] Get a degree from MIT and/or Stanford
+23. [ ] Own a high precision manufacturing company
+24. [ ] Start an open source project
+25. [ ] Publish a few research papers

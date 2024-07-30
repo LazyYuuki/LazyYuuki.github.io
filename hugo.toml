@@ -3,221 +3,221 @@ baseURL = "https://LazyYuuki.github.io/"
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
-title        = "The Lazy Blog"
+title = "The Lazy Blog"
 # Change the default theme to be use when building the site with Hugo
 theme = "DoIt"
 
 [outputs]
-  home         = ["HTML", "JSON", "RSS"]
-  page         = ["HTML", "MarkDown"]
-  section      = ["HTML", "RSS"]
-  taxonomy     = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
+home = ["HTML", "JSON", "RSS"]
+page = ["HTML", "MarkDown"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+# taxonomyTerm = ["HTML"]
 
 [params]
-  # DoIt theme version
-  dateFormat = "Feb 01, 2006"
-  defaultTheme = "dark"
-  description = "A blog about all thing engineering and startup related"
-  enablePWA = true
-  fingerprint = "sha256"
-  images = ["/avatar.png"]
-  keywords = [
-    "ai",
-    "artificial intelligence",
-    "business",
-    "cloud",
-    "code",
-    "engineer",
-    "engineering",
-    "large language model",
-    "llm",
-    "llmops",
-    "machine learning",
-    "ml",
-    "mlops",
-    "programming",
-    "saas",
-    "software",
-    "start-up",
-  ]
-  license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-  version = "0.2.13"
+# DoIt theme version
+dateFormat = "Feb 01, 2006"
+defaultTheme = "dark"
+description = "A blog about all thing engineering and startup related"
+enablePWA = true
+fingerprint = "sha256"
+images = ["/avatar.png"]
+keywords = [
+  "ai",
+  "artificial intelligence",
+  "business",
+  "cloud",
+  "code",
+  "engineer",
+  "engineering",
+  "large language model",
+  "llm",
+  "llmops",
+  "machine learning",
+  "ml",
+  "mlops",
+  "programming",
+  "saas",
+  "software",
+  "start-up",
+]
+license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+version = "0.2.13"
 
-  [params.app]
-    noFavicon = false
-    title     = "The Lazy Blog"
+[params.app]
+noFavicon = false
+title = "The Lazy Blog"
 
-  [params.header]
-    desktopMode     = "fixed"
-    mobileMode      = "fixed"
-    themeChangeMode = "select"
+[params.header]
+desktopMode = "fixed"
+mobileMode = "fixed"
+themeChangeMode = "select"
 
-    [params.header.title]
-      name = "The Lazy Blog"
-      post = "😴"
+[params.header.title]
+name = "The Lazy Blog"
+post = "😴"
 
 [params.footer]
-  author  = true
-  enable  = true
-  hugo    = true
-  license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-  since   = 2024
+author = true
+enable = true
+hugo = true
+license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+since = 2024
 
 [params.social]
-  BuyMeACoffee   = "xxxx"
-  Github         = "xxxx"
-  Linkedin       = "xxxx"
-  RSS            = true
-  Youtubechannel = "xxxx"
+BuyMeACoffee = "xxxx"
+Github = "xxxx"
+Linkedin = "xxxx"
+RSS = true
+Youtubechannel = "xxxx"
 
 [params.home]
-  rss = 10
-  [params.home.profile]
-    avatarURL = "/avatar.png"
-    enable    = true
-    social    = true
-    subtitle  = "Welcome to my humble blog"
-    typeit    = true
+rss = 10
+[params.home.profile]
+avatarURL = "/avatar.png"
+enable = true
+social = true
+subtitle = "Welcome to my humble blog"
+typeit = true
 
-  [params.home.posts]
-    enable   = true
-    paginate = 5
+[params.home.posts]
+enable = true
+paginate = 5
 
 [params.page]
-  enableLastMod = false
-  [params.page.toc]
-    auto       = true
-    enable     = true
-    keepStatic = false
-  [params.page.math]
-    enable = true
-    # default block delimiter is $$ ... $$ and \\[ ... \\]
-    blockLeftDelimiter  = ""
-    blockRightDelimiter = ""
-    # default inline delimiter is $ ... $ and \\( ... \\)
-    copyTex              = true
-    inlineLeftDelimiter  = ""
-    inlineRightDelimiter = ""
-    mhchem               = true
-  [params.page.code]
-    copy          = true
-    maxShownLines = 10
-  [params.page.table]
-    sort = true
-  [params.page.share]
-    Facebook   = true
-    HackerNews = true
-    Instapaper = true
-    Linkedin   = true
-    Mastodon   = true
-    Pocket     = true
-    Reddit     = true
-    Twitter    = true
-    Whatsapp   = true
-    enable     = true
-  [params.page.instantpage]
-    enable = true
+enableLastMod = false
+[params.page.toc]
+auto = true
+enable = true
+keepStatic = false
+[params.page.math]
+enable = true
+# default block delimiter is $$ ... $$ and \\[ ... \\]
+blockLeftDelimiter = ""
+blockRightDelimiter = ""
+# default inline delimiter is $ ... $ and \\( ... \\)
+copyTex = true
+inlineLeftDelimiter = ""
+inlineRightDelimiter = ""
+mhchem = true
+[params.page.code]
+copy = true
+maxShownLines = 10
+[params.page.table]
+sort = true
+[params.page.share]
+Facebook = true
+HackerNews = true
+Instapaper = true
+Linkedin = true
+Mastodon = true
+Pocket = true
+Reddit = true
+Twitter = true
+Whatsapp = true
+enable = true
+[params.page.instantpage]
+enable = true
 
-  [params.page.comment]
-    enable = true
-    [params.page.comment.disqus]
-      enable = true
-      # Disqus shortname to use Disqus in posts
-      shortname = "lazyblog-1"
+[params.page.comment]
+enable = true
+[params.page.comment.disqus]
+enable = true
+# Disqus shortname to use Disqus in posts
+shortname = "lazyblog-1"
 
 [params.sponsor]
-  enable = true
+enable = true
 
 [params.search]
-  contentLength   = 4000
-  enable          = true
-  hgihlightTag    = "em"
-  maxResultLength = 10
-  placeholder     = "Keywords to search for..."
-  type            = "fuse"
+contentLength = 4000
+enable = true
+hgihlightTag = "em"
+maxResultLength = 10
+placeholder = "Keywords to search for..."
+type = "fuse"
 
-  [params.search.fuse]
-    # DoIt NEW | 0.2.12 https://fusejs.io/api/options.html
-    distance           = 100
-    findAllMatches     = false
-    ignoreFieldNorm    = false
-    ignoreLocation     = false
-    isCaseSensitive    = false
-    location           = 0
-    minMatchCharLength = 2
-    threshold          = 0.3
-    useExtendedSearch  = false
+[params.search.fuse]
+# DoIt NEW | 0.2.12 https://fusejs.io/api/options.html
+distance = 100
+findAllMatches = false
+ignoreFieldNorm = false
+ignoreLocation = false
+isCaseSensitive = false
+location = 0
+minMatchCharLength = 2
+threshold = 0.3
+useExtendedSearch = false
 
 # Author config
 [author]
-  avatar = "/avatar.png"
-  name   = "Bui Quang Huy"
+avatar = "/avatar.png"
+name = "Bui Quang Huy"
 
 [menu]
-  [[menu.main]]
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    name = "Posts"
-    post = ""
-    url  = "/posts/"
-    # title will be shown when you hover on this menu link
-    title  = ""
-    weight = 1
-  [[menu.main]]
-    identifier = "tags"
-    name       = "Tags"
-    post       = ""
-    pre        = ""
-    title      = ""
-    url        = "/tags/"
-    weight     = 2
-  [[menu.main]]
-    identifier = "series"
-    name       = "Series"
-    url        = "/series/"
-    weight     = 3
-  [[menu.main]]
-    identifier = "bucket-list"
-    name       = "My Bucket List"
-    url        = "/bucket-list/"
-    weight     = 4
-  [[menu.main]]
-    identifier = "about"
-    name       = "About me"
-    url        = "/about/"
+[[menu.main]]
+identifier = "posts"
+# you can add extra information before the name (HTML format is supported), such as icons
+pre = ""
+# you can add extra information after the name (HTML format is supported), such as icons
+name = "Posts"
+post = ""
+url = "/posts/"
+# title will be shown when you hover on this menu link
+title = ""
+weight = 1
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+post = ""
+pre = ""
+title = ""
+url = "/tags/"
+weight = 2
+[[menu.main]]
+identifier = "series"
+name = "Series"
+url = "/series/"
+weight = 3
+[[menu.main]]
+identifier = "bucket-list"
+name = "My Bucket List"
+url = "/bucket-list/"
+weight = 4
+[[menu.main]]
+identifier = "about"
+name = "About me"
+url = "/about/"
 
 # Markup related configuration in Hugo
 [markup]
-  # Syntax Highlighting
-  [markup.highlight]
-    codeFences         = true
-    guessSyntax        = true
-    lineNos            = true
-    lineNumbersInTable = true
-    # false is a necessary configuration
-    # (https://github.com/dillonzq/LoveIt/issues/158)
-    noClasses = false
-  # Goldmark is from Hugo 0.60 the default library used for Markdown
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote       = true
-      linkify        = true
-      strikethrough  = true
-      table          = true
-      taskList       = true
-      typographer    = true
-    [markup.goldmark.renderer]
-      # whether to use HTML tags directly in the document
-      unsafe = true
+# Syntax Highlighting
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+lineNumbersInTable = true
+# false is a necessary configuration
+# (https://github.com/dillonzq/LoveIt/issues/158)
+noClasses = false
+# Goldmark is from Hugo 0.60 the default library used for Markdown
+[markup.goldmark]
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = true
+[markup.goldmark.renderer]
+# whether to use HTML tags directly in the document
+unsafe = true
 # Table Of Contents settings
 [markup.tableOfContents]
-  endLevel   = 6
-  startLevel = 1
+endLevel = 6
+startLevel = 1
 
 [taxonomies]
-  series = 'series'
-  tag    = 'tags'
+series = 'series'
+tag = 'tags'
