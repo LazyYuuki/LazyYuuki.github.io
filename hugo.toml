@@ -185,6 +185,11 @@ name = "My Bucket List"
 url = "/bucket-list/"
 weight = 4
 [[menu.main]]
+identifier = "build-list"
+name = "My Build List"
+url = "/build-list/"
+weight = 5
+[[menu.main]]
 identifier = "about"
 name = "About me"
 url = "/about/"
