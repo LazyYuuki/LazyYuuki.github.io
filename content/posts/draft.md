@@ -6,6 +6,7 @@ draft = true
 
 # Draft
 
-Here is where I dump idea for things that I don't want to publish yet.
+# What makes C++ different from C?
+
 
 
