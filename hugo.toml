@@ -190,6 +190,10 @@ name = "My Build List"
 url = "/build-list/"
 weight = 5
 [[menu.main]]
+identifier = "read-list"
+name = "My Read List"
+url = "/read-list/"
+[[menu.main]]
 identifier = "about"
 name = "About me"
 url = "/about/"
