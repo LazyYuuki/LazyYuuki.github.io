@@ -2,10 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://LazyYuuki.github.io/posts/</loc><lastmod>2024-07-30T22:51:12&#43;08:00</lastmod></url><url>
-            <loc>https://LazyYuuki.github.io/</loc><lastmod>2024-07-30T22:51:12&#43;08:00</lastmod></url><url>
-            <loc>https://LazyYuuki.github.io/about/</loc></url><url>
-            <loc>https://LazyYuuki.github.io/bucket-list/</loc></url><url>
-            <loc>https://LazyYuuki.github.io/build-list/</loc></url><url>
-            <loc>https://LazyYuuki.github.io/series/</loc></url><url>
-            <loc>https://LazyYuuki.github.io/tags/</loc></url></urlset>
+            <loc>http://localhost:1313/quotes/</loc><lastmod>2024-10-30T14:50:00&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2024-10-30T14:50:00&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/quotes/zero-to-one/</loc><lastmod>2024-10-30T14:50:00&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2024-10-01T09:51:12&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/motivation-for-writing/</loc><lastmod>2024-07-30T22:51:12&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/lists/</loc><lastmod>2024-07-30T00:00:00&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/lists/bucket-list/</loc><lastmod>2024-07-30T00:00:00&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/lists/build-list/</loc><lastmod>2024-07-30T00:00:00&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/lists/read-list/</loc><lastmod>2024-07-30T00:00:00&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/about/</loc></url><url>
+            <loc>http://localhost:1313/series/</loc></url><url>
+            <loc>http://localhost:1313/tags/</loc></url></urlset>

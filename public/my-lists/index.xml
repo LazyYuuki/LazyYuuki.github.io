@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My-Lists on The Lazy Blog</title>
+    <link>http://localhost:1313/my-lists/</link>
+    <description>Recent content in My-Lists on The Lazy Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/my-lists/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/my-lists/bucket-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/my-lists/bucket-list/</guid>
+      <description> A list of things I want to doHere are a mix of some aspiration I have in life, some random shower thought, and some spontaneous things I would like to do with my life before I kick the bucket.&#xA;Start a tech company Establish a non-profit organisation to digitalise mountainous area in Vietnam Contribute at least USD$10k to impactful open source projects Make a personal blog Write a technical book Write a start-up book Give a Ted talk about something interesting Learn how to fly a plane Try out traveling first class on an airplane Try out driving a supercar Start a Vietnamese streetfood chain company Start a relatively popular open source project (min 1k stars) Learn Mandarin to HSK6 (HSK3) Learn Bahasa Malaysia to conversational Learn French to conversational Learn Spanish to conversational Learn Japanese to conversational Learn Korean to conversational Learn how to do a handstand Get a Master Get a PhD Get a degree from MIT and/or Stanford Own a high precision manufacturing company Start an open source project Publish a few research papers </description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/my-lists/build-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/my-lists/build-list/</guid>
+      <description> A list of thing that I want to buildThis is where I brain-dump all of my &amp;ldquo;greatest idea ever that may or may not see the light of day that I want to build.&amp;rdquo;&#xA;Another Tensor Library Make a note editor as a PWA that can run on Ipad Contribute new exercise to Exercism in the Zig track Make a algorithm visualization platform that translates code into visual for ease of learning An alternative to Bacon in Rust but for Zig A TUI for managing Docker in the Terminal (because screw the bloated GUI) A flappy bird game in the Terminal An app to monitor computer usage right from the Terminal An app that you can just upload a csv on and ask it to process the data and generate a chart for you An app that summarize and recommend suitable podcast </description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/my-lists/read-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/my-lists/read-list/</guid>
+      <description> My personal read listIt is just a place where I dump all the books I have read and want to read (non-exhaustive because I probably can&amp;rsquo;t remember everything I have read before making this list either) so I don&amp;rsquo;t I have to remember what the heck I have read.&#xA;Learning to Build: The 5 Bedrock Skills of Innovators and Entrepreneurs - Bob Moesta Hacking Growth: How Today&amp;rsquo;s Fastest-Growing Companies Drive Breakout Success - Sean Ellis Traction: How Any Startup Can Achieve Explosive Customer Growth - Gabriel Weinberg, Justin Mares Writing an interpreter in Go - Thorsten Ball Million Dollar Weekend - Noah Kagan Build a Large Language Model (From Scratch) - Sebastian Raschka Deep Learning - Ian Goodfellow, Yoshua Bengio, Aaron Courville The Lean Startup - Eric Ries Zero to one - Peter Thiel </description>
+    </item>
+  </channel>
+</rss>

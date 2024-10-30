@@ -1,4 +1,5 @@
-# A list of things I want to do
+# My Bucket List
+
 
 Here are a mix of some aspiration I have in life, some random shower thought, and some spontaneous things I would like to do with my life before I kick the bucket.
 
@@ -27,3 +28,4 @@ Here are a mix of some aspiration I have in life, some random shower thought, an
 23. [ ] Own a high precision manufacturing company
 24. [ ] Start an open source project
 25. [ ] Publish a few research papers
+

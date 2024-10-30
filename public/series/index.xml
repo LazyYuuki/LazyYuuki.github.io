@@ -1,7 +1,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Series - Series - The Lazy Blog</title>
-        <link>https://LazyYuuki.github.io/series/</link>
+        <link>http://localhost:1313/series/</link>
         <description>Series - Series - The Lazy Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://LazyYuuki.github.io/series/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="http://localhost:1313/series/" rel="self" type="application/rss+xml" /></channel>
 </rss>

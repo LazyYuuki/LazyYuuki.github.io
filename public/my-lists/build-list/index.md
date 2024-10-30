@@ -1,3 +1,5 @@
+# 
+
 # A list of thing that I want to build
 
 This is where I brain-dump all of my "greatest idea ever that may or may not see the light of day that I want to build."
@@ -11,4 +13,6 @@ This is where I brain-dump all of my "greatest idea ever that may or may not see
 7. [ ] A flappy bird game in the Terminal
 8. [ ] An app to monitor computer usage right from the Terminal
 9. [ ] An app that you can just upload a csv on and ask it to process the data and generate a chart for you
+10. [ ] An app that summarize and recommend suitable podcast
+
 

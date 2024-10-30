@@ -1,22 +1,14 @@
 baseURL = "https://LazyYuuki.github.io/"
-# [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
-# language code
 languageCode = "en"
 title = "The Lazy Blog"
-# Change the default theme to be use when building the site with Hugo
 theme = "DoIt"
 
-[outputs]
-home = ["HTML", "JSON", "RSS"]
-page = ["HTML", "MarkDown"]
-section = ["HTML", "RSS"]
-taxonomy = ["HTML", "RSS"]
-# taxonomyTerm = ["HTML"]
 
 [params]
 # DoIt theme version
-dateFormat = "Feb 01, 2006"
+version = "0.4.0"
+dateFormat = "Jan 02, 2006"
 defaultTheme = "dark"
 description = "A blog about all thing engineering and startup related"
 enablePWA = true
@@ -42,70 +34,130 @@ keywords = [
   "start-up",
 ]
 license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-version = "0.2.13"
+optimizeImages = true
+cacheRemoteImages = true
+
+# Author config
+[params.author]
+name = "Bui Quang Huy"
+avatar = "/avatar.png"
 
 [params.app]
-noFavicon = false
 title = "The Lazy Blog"
+noFavicon = false
+
+[params.search]
+enable = true
+type = "fuse"
+contentLength = 4000
+highlightTag = "em"
+maxResultLength = 10
+placeholder = "Keywords to search for..."
+
+[params.search.fuse]
+# DoIt NEW | 0.2.12 https://fusejs.io/api/options.html
+isCaseSensitive = false
+minMatchCharLength = 2
+findAllMatches = false
+location = 0
+threshold = 0.3
+distance = 100
+ignoreLocation = false
+useExtendedSearch = false
+ignoreFieldNorm = false
+
+[params.image]
+cacheRemote = true
+optimize = true
 
 [params.header]
-desktopMode = "fixed"
-mobileMode = "fixed"
-themeChangeMode = "select"
+themeChangeMode = "switch"
 
 [params.header.title]
 name = "The Lazy Blog"
 post = "😴"
 
 [params.footer]
-author = true
 enable = true
 hugo = true
-license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+author = true
 since = 2024
+license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
-[params.social]
-BuyMeACoffee = "xxxx"
-Github = "xxxx"
-Linkedin = "xxxx"
-RSS = true
-Youtubechannel = "xxxx"
+[params.section]
+paginate = 20
+dateFormat = "Jan 02"
+rss = 5
+
+[params.section.recentlyUpdated]
+enable = true
+rss = true
+days = 30
+maxCount = 5
+
+[params.list]
+paginate = 20
+dateFormat = "Jan 02"
+rss = 5
 
 [params.home]
 rss = 10
+
 [params.home.profile]
-avatarURL = "/avatar.png"
 enable = true
-social = true
+avatarURL = "/avatar.png"
+title = "Lazy, but not too lazy"
 subtitle = "Welcome to my humble blog"
 typeit = true
+social = true
 
 [params.home.posts]
 enable = true
 paginate = 5
 
+[params.social]
+BuyMeACoffee = "https://buymeacoffee.com/lazyyuuki"
+Github = "https://github.com/LazyYuuki"
+Linkedin = "www.linkedin.com/in/buiquanghuy"
+Youtubechannel = "xxxx"
+RSS = true
+
 [params.page]
-enableLastMod = false
+seriesNavigation = true
+enableLastMod = true
+enableWordCount = true
+enableReadingTime = true
+
+[params.page.outdatedArticleReminder]
+enable = false
+
 [params.page.toc]
-auto = true
 enable = true
 keepStatic = false
+auto = true
+
 [params.page.math]
 enable = true
 # default block delimiter is $$ ... $$ and \\[ ... \\]
 blockLeftDelimiter = ""
 blockRightDelimiter = ""
 # default inline delimiter is $ ... $ and \\( ... \\)
-copyTex = true
 inlineLeftDelimiter = ""
 inlineRightDelimiter = ""
+copyTex = true
 mhchem = true
+
 [params.page.code]
-copy = true
 maxShownLines = 10
+copy = true
+
 [params.page.table]
 sort = true
+
+[params.page.mapbox]
+
 [params.page.share]
+enable = true
 Facebook = true
 HackerNews = true
 Instapaper = true
@@ -115,90 +167,51 @@ Pocket = true
 Reddit = true
 Twitter = true
 Whatsapp = true
-enable = true
+
 [params.page.instantpage]
 enable = true
 
 [params.page.comment]
 enable = true
+
 [params.page.comment.disqus]
-enable = true
-# Disqus shortname to use Disqus in posts
+enable = false
 shortname = "lazyblog-1"
+
+# Third-party library config
+[params.page.library.css]
+fontsize = "font-size.css"
+
+[params.page.library.js]
+
+[params.page.seo]
+
+[params.page.related]
+enable = true
+count = 3
 
 [params.sponsor]
 enable = true
+bio = "Sponsor me to yap more!"
+link = "https://buymeacoffee.com/lazyyuuki"
 
-[params.search]
-contentLength = 4000
-enable = true
-hgihlightTag = "em"
-maxResultLength = 10
-placeholder = "Keywords to search for..."
-type = "fuse"
+[params.typeit]
+speed = 50         # in ms
+cursorSpeed = 1000
+cursorChar = "█"
+duration = -1
 
-[params.search.fuse]
-# DoIt NEW | 0.2.12 https://fusejs.io/api/options.html
-distance = 100
-findAllMatches = false
-ignoreFieldNorm = false
-ignoreLocation = false
-isCaseSensitive = false
-location = 0
-minMatchCharLength = 2
-threshold = 0.3
-useExtendedSearch = false
+[params.verification]
+google = ""
 
-# Author config
-[author]
-avatar = "/avatar.png"
-name = "Bui Quang Huy"
+[params.seo]
+alternateName = ["Lazy Blog", "LazyYuuki", "LazyYuuki's blog", "The Lazy Blog"]
 
-[menu]
-[[menu.main]]
-identifier = "posts"
-# you can add extra information before the name (HTML format is supported), such as icons
-pre = ""
-# you can add extra information after the name (HTML format is supported), such as icons
-name = "Posts"
-post = ""
-url = "/posts/"
-# title will be shown when you hover on this menu link
-title = ""
-weight = 1
-[[menu.main]]
-identifier = "tags"
-name = "Tags"
-post = ""
-pre = ""
-title = ""
-url = "/tags/"
-weight = 2
-[[menu.main]]
-identifier = "series"
-name = "Series"
-url = "/series/"
-weight = 3
-[[menu.main]]
-identifier = "bucket-list"
-name = "My Bucket List"
-url = "/bucket-list/"
-weight = 4
-[[menu.main]]
-identifier = "build-list"
-name = "My Build List"
-url = "/build-list/"
-weight = 5
-[[menu.main]]
-identifier = "read-list"
-name = "My Read List"
-url = "/read-list/"
-[[menu.main]]
-identifier = "about"
-name = "About me"
-url = "/about/"
+[params.analytics]
 
-# Markup related configuration in Hugo
+[params.cookieconsent]
+enable = false
+
 [markup]
 # Syntax Highlighting
 [markup.highlight]
@@ -206,10 +219,8 @@ codeFences = true
 guessSyntax = true
 lineNos = true
 lineNumbersInTable = true
-# false is a necessary configuration
-# (https://github.com/dillonzq/LoveIt/issues/158)
 noClasses = false
-# Goldmark is from Hugo 0.60 the default library used for Markdown
+
 [markup.goldmark]
 [markup.goldmark.extensions]
 definitionList = true
@@ -219,14 +230,61 @@ strikethrough = true
 table = true
 taskList = true
 typographer = true
+
 [markup.goldmark.renderer]
-# whether to use HTML tags directly in the document
 unsafe = true
-# Table Of Contents settings
+
 [markup.tableOfContents]
-endLevel = 6
 startLevel = 1
+endLevel = 6
+
+[outputs]
+home = ["HTML", "JSON", "RSS"]
+page = ["HTML", "MarkDown"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
 
 [taxonomies]
 series = 'series'
 tag = 'tags'
+
+[menu]
+[[menu.main]]
+identifier = "posts"
+pre = "📝"
+name = "Posts"
+url = "/posts/"
+weight = 1
+
+[[menu.main]]
+identifier = "quotes"
+pre = "📜"
+name = "Quotes"
+url = "/quotes/"
+title = "Quotes that I like"
+weight = 2
+
+[[menu.main]]
+identifier = "lists"
+pre = "📓"
+name = "My Lists"
+url = "/lists/"
+title = "A list of list of things in my life"
+weight = 3
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 4
+
+[[menu.main]]
+identifier = "series"
+name = "Series"
+url = "/series/"
+weight = 4
+
+[[menu.main]]
+identifier = "about"
+name = "About me"
+url = "/about/"

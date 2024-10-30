@@ -6,7 +6,3 @@ draft = true
 
 # Draft
 
-# What makes C++ different from C?
-
-
-

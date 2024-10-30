@@ -1,9 +1,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>The Lazy Blog</title>
-        <link>https://LazyYuuki.github.io/</link>
+        <link>http://localhost:1313/</link>
         <description>A blog about all thing engineering and startup related</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Jul 2024 22:51:12 &#43;0800</lastBuildDate>
-            <atom:link href="https://LazyYuuki.github.io/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Oct 2024 14:50:00 &#43;0800</lastBuildDate>
+            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Draft</title>
+    <link>http://localhost:1313/posts/motivation-for-writing/</link>
+    <pubDate>Tue, 30 Jul 2024 22:51:12 &#43;0800</pubDate><author>
+        <name>Bui Quang Huy</name>
+    </author><guid>http://localhost:1313/posts/motivation-for-writing/</guid>
+    <description><![CDATA[<h1 id="why-do-i-want-to-start-writing" class="headerLink">
+    <a href="#why-do-i-want-to-start-writing" class="header-mark"></a>Why do I want to start writing?</h1><p>I actually want to write for a long time now, but after reading one of PG article in which he said:</p>
+<p>&ldquo;If writing down your ideas always makes them more precise and more complete, then no one who hasn&rsquo;t written about a topic has fully formed ideas about it. And someone who never writes has no fully formed ideas about anything nontrivial.
+It feels to them as if they do, especially if they&rsquo;re not in the habit of critically examining their own thinking. Ideas can feel complete. It&rsquo;s only when you try to put them into words that you discover they&rsquo;re not. So if you never subject your ideas to that test, you&rsquo;ll not only never have fully formed ideas, but also never realize it.&rdquo;</p>]]></description>
+</item></channel>
 </rss>
