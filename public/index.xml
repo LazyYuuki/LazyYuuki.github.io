@@ -1,9 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>The Lazy Blog</title>
-        <link>https://LazyYuuki.github.io/</link>
-        <description>A blog about all thing engineering and startup related</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Oct 2024 14:50:00 &#43;0800</lastBuildDate>
-            <atom:link href="https://LazyYuuki.github.io/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
-</rss>

@@ -1,0 +1,24 @@
+# Hugo build output directories
+/public/
+/resources/
+/hugo_stats.json
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Backup files and local drafts
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Generated asset directories (e.g., if you're using Hugo Pipes)
+resources/_gen/
+
+# Environment variables
+.env
