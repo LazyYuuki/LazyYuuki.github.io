@@ -39,7 +39,7 @@ cacheRemoteImages = true
 
 # Author config
 [params.author]
-name = "Bui Quang Huy"
+name = "Lazy Yuuki"
 avatar = "/avatar.png"
 
 [params.app]
