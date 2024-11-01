@@ -132,7 +132,7 @@ enableReadingTime = true
 enable = false
 
 [params.page.toc]
-enable = true
+enable = false
 keepStatic = false
 auto = true
 
