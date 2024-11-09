@@ -3,6 +3,8 @@ title = 'Zero to One Quotes'
 date = 2024-10-30T14:50:00+08:00
 +++
 
+**Zero to One - Peter Thiel**
+
 > My own answer to the contrarian question is that most people think the future of the world will be dfined by globalization, but the truth is that technology matters more. Without technological change, if China doubles its energy production over the next two decades, it will also double its air pollution. If every one of India's hundreds of millions of households were to live the way Americans already do - using only today's tools - the result would be environmentally catastrophic. Spreading old ways to create wealth around the world will result in devastation, not riches. In a world of scarce resources, globalization without new technology is unsustainable.
 
 > Positively defined, a startup is the largest group of people you can convince of a plan to build a different future.

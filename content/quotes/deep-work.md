@@ -3,6 +3,8 @@ title = 'Deep Work Takeaway'
 date = 2024-11-09T10:40:00+08:00
 +++
 
+**Deep Work: Rules for focues success in a distracted world - Cal Newport**
+
 > Ironically, jobs are acutally easier to enjoy than free time, because like flow activities they have built-in goals, feedback rules, and challenges, all of which encoruage on to become involved in one's work, to concentrate and lose oneself in it. Free time, on the other hand, is unstructured, and requires much greater effort to be shaped into something that can be enjoyed.
 
 > Human beings, it seems, are at their best when immersed deeply in something challenging.

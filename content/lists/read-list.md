@@ -14,3 +14,5 @@ It is just a place where I dump all the books I have read and want to read (non-
 - [ ] Deep Learning - Ian Goodfellow, Yoshua Bengio, Aaron Courville
 - [x] The Lean Startup - Eric Ries
 - [x] Zero to one - Peter Thiel
+- [x] Deep Work: Rules for focused success in a distracted world - Cal Newport
+- [x] Show Your Work: 10 ways to dhare your creativity and get discovered - Austin Kleon
