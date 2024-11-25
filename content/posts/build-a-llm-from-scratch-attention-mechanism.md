@@ -1,12 +1,10 @@
 +++
-title = 'Build a LLM from scratch'
+title = 'Build a LLM from scratch: Attention Mechanism'
 date = 2024-11-18T20:00:00+08:00
 lastmod = 2024-11-22T20:00:00+08:00 
 draft = false
 toc.enable = true
 +++
-
-## 2. Attention Mechanism
 
 A brief description of how the attention block works:
 
