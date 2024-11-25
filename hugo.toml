@@ -148,7 +148,7 @@ copyTex = true
 mhchem = true
 
 [params.page.code]
-maxShownLines = 10
+maxShownLines = 24
 copy = true
 
 [params.page.table]
