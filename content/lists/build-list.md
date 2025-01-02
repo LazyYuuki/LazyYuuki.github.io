@@ -22,6 +22,7 @@ This is where I brain-dump all of my "greatest idea ever that may or may not see
 
 1. [ ] Make a GPT implementation from scratch purely in Zig.
 2. [ ] Make my own email client that I want to use.
+3. [ ] Make my own interpreter.
 
 
 
