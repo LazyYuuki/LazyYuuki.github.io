@@ -1,11 +1,10 @@
 +++
 title = 'My Build List'
-date = 2024-07-30T00:00:00+08:00
 +++
 
 This is where I brain-dump all of my "greatest idea ever that may or may not see the light of day that I want to build."
 
-## No time limit
+# No time limit
 
 1. ~~[ ] Another Tensor Library~~
 2. ~~[ ] Make a note editor as a PWA that can run on Ipad~~
@@ -19,7 +18,7 @@ This is where I brain-dump all of my "greatest idea ever that may or may not see
 10. [ ] An app that summarize and recommend suitable podcast
 11. [ ] Make an emoji input for gitui
 
-## For 2025
+# 2025
 
 1. [ ] Make a GPT implementation from scratch purely in Zig.
 2. [ ] Make my own email client that I want to use.

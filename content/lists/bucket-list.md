@@ -1,6 +1,5 @@
 +++
 title = 'My Bucket List'
-date = 2024-07-30T00:00:00+08:00
 +++
 
 Here are a mix of some aspiration I have in life, some random shower thought, and some spontaneous things I would like to do with my life before I kick the bucket.
