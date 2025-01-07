@@ -6,6 +6,7 @@
 # Logs and temporary files
 *.log
 *.tmp
+braindump.md
 
 # OS-generated files
 .DS_Store
