@@ -18,10 +18,13 @@ It is just a place where I dump all the books I have read and want to read (non-
 - [x] The Lean Startup - Eric Ries
 - [x] Zero to one - Peter Thiel
 - [x] Deep Work: Rules for focused success in a distracted world - Cal Newport
-- [x] Show Your Work: 10 ways to dhare your creativity and get discovered - Austin Kleon
+- [x] Show Your Work: 10 ways to share your creativity and get discovered - Austin Kleon
 - [x] The Malay Dilemma - Mahathir Mohamad
 - [x] Outlier: The story of success - Malcolm Gladwell
+- [x] Demand-side sales 101: Stop selling and help your customers make progress - Bob Moesta, Greg Engle
+- [x] The Subtle Art of Not Giving A Fuck: A counterintuitive approach to living a good life - Mark Manson
 
 # 2025
 
 - [ ] Writing an interpreter in Go - Thorsten Ball
+- [x] Getting to YES: Neogitating Agreeement Without Giving In - Roger Fisher, William Ury
