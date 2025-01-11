@@ -1,6 +1,6 @@
 +++
 title = 'So Good They Can't Ignore You'
-date = 2024-01-11T10:55:00+08:00
+date = 2024-01-11T11:00:00+08:00
 +++
 
 **So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love - Cal Newport**
