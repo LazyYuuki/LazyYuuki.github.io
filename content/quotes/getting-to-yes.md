@@ -1,6 +1,6 @@
 +++
 title = 'Getting to YES'
-date = 2024-01-08T20:00:00+08:00
+date = 2025-01-08T20:00:00+08:00
 +++
 
 **Getting to YES: Neogitating Agreeement Without Giving In - Roger Fisher, William Ury**
