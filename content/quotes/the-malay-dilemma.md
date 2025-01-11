@@ -1,5 +1,5 @@
 +++
-title = 'The Malay Dilemma Takeaway'
+title = 'The Malay Dilemma'
 date = 2024-12-08T09:00:00+08:00
 +++
 

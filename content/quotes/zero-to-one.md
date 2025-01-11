@@ -1,5 +1,5 @@
 +++
-title = 'Zero to One Quotes'
+title = 'Zero to One'
 date = 2024-10-30T14:50:00+08:00
 +++
 

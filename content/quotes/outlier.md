@@ -1,5 +1,5 @@
 +++
-title = 'Outliers Takeaway'
+title = 'Outliers'
 date = 2024-12-26T10:30:00+08:00
 +++
 

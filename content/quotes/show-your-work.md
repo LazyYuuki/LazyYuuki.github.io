@@ -1,5 +1,5 @@
 +++
-title = 'Show Your Work Takeaway'
+title = 'Show Your Work'
 date = 2024-11-09T16:40:00+08:00
 +++
 

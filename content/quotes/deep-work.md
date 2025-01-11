@@ -1,5 +1,5 @@
 +++
-title = 'Deep Work Takeaway'
+title = 'Deep Work'
 date = 2024-11-09T10:40:00+08:00
 +++
 

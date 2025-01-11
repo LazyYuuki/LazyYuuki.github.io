@@ -1,5 +1,5 @@
 +++
-title = 'Getting to YES Takeaway'
+title = 'Getting to YES'
 date = 2024-01-08T20:00:00+08:00
 +++
 
