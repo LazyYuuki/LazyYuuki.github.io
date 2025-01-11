@@ -1,10 +1,14 @@
 +++
 title = 'Build a LLM from scratch: Attention Mechanism'
 date = 2024-11-18T20:00:00+08:00
-lastmod = 2024-11-22T20:00:00+08:00 
-draft = false
+lastmod = 2024-01-11T21:00:00+08:00 
 toc.enable = true
+tags = ["ai", "engineer"]
+series = ["LLM from scratch"]
+summary = "In this blog post, I attempt to distill what I have learn about building an attention mechanism for LLM in an easy to digest format. It is heavily inspirted by the content of Sebastian Raschka's Build a Large Language Model (From Scratch) with extra notation to make the content more clear to newcomer."
 +++
+
+Although I have been working with LLMs since the GPT-2 days, I actually have never fully built a LLM from scratch myself. A lot of my knowledge stems from my curiosity and so a lot of self-learning was conducted without any proper systematic structure. Even in my university course, the detailed of how to build a full fletch LLM is only glossed over, although I do gain a rather deep understanding of how tokenization works thank to having to build one myself. In this (hopefully) series of blog post, I will try to distill what I have learnt with the hope that it would be useful for someone else in the future to learn from too!
 
 > [!NOTE]
 > 
@@ -12,7 +16,6 @@ toc.enable = true
 >
 > Please give it a read if you really want to go through the process step by step and have an even more indepth look at it.
 
-Although I have been working with LLMs since the GPT-2 days, I actually have never fully built a LLM from scratch myself. A lot of my knowledge stems from my curiosity and so a lot of self-learning was conducted without any proper systematic structure. Even in my university course, the detailed of how to build a full fletch LLM is only glossed over, although I do gain a rather deep understanding of how tokenization works thank to having to build one myself. In this (hopefully) series of blog post, I will try to distill what I have learnt with the hope that it would be useful for someone else in the future to learn from too!
 
 ## 1. Basic input
 
