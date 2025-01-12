@@ -3,7 +3,7 @@ title = 'Time to start building'
 date = 2025-01-11T21:00:00+08:00
 lastmod = 2024-01-11T21:00:00+08:00
 tags = ["reflection"]
-summary=""
+summary="In this blog post, I reflect upon my grow as an engineer from early childhood to understand why I never created much things of my own, and what I want to do differently, now that I have become aware of my shortcoming."
 +++
 
 Despite loving to fix and optimize things from a young age, I have an abyssmal rate of creating new things. And I have been ashamed ever since I am aware of it. Why you might ask? Well, it is puzzling for me too.
