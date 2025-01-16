@@ -12,6 +12,8 @@ It is just a place where I dump all the books I have read and want to read (non-
 
 # 2024 (and before)
 
+- [x] Doing Good Better: How Effective Altruism Can Help You Help Others, Do Work that Matters, and Make Smarter Choices About Giving Back - William Macaskill
+- [x] 80,000 hours: Find a fulfilling career that does good - Benjamin Todd
 - [x] Learning to Build: The 5 Bedrock Skills of Innovators and Entrepreneurs - Bob Moesta
 - [x] Million Dollar Weekend - Noah Kagan
 - [x] Build a Large Language Model (From Scratch) - Sebastian Raschka
