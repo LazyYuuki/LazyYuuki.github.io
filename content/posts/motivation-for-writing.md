@@ -2,8 +2,8 @@
 title = 'Why do I start writing now?'
 date = 2024-11-01T17:00:00+08:00
 lastmod = 2025-01-11T21:00:00+08:00
-summary = "In this blog post, I talk about why it takes so long for me to come to term with my writting, the significant of writing to me, and why I encourage everyone else to also write for themselves."
 tags = ["reflection"]
+summary = "In this blog post, I talk about why it takes so long for me to come to term with my writting, the significant of writing to me, and why I encourage everyone else to also write for themselves."
 +++
 
 I actually want to start writing for a long time now. I said "start writing" instead of just "write" because in my head writing has always seemed like an activity reserved for those with more important things to share than I do. That is why I procrastinate, because I thought that I have nothing of significant to share. At least, nothing that would worth the time of the day for other people to read, so I never start writing. 
