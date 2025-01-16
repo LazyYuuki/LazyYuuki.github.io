@@ -1,7 +1,7 @@
 +++
 title = 'Build a LLM from scratch: Attention Mechanism'
 date = 2024-11-18T20:00:00+08:00
-lastmod = 2024-01-11T21:00:00+08:00 
+lastmod = 2025-01-11T21:00:00+08:00 
 toc.enable = true
 tags = ["ai", "engineer"]
 series = ["LLM from scratch"]

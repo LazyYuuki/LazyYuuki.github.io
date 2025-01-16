@@ -1,7 +1,7 @@
 +++
 title = 'Why do I start writing now?'
 date = 2024-11-01T17:00:00+08:00
-lastmod = 2024-01-11T21:00:00+08:00
+lastmod = 2025-01-11T21:00:00+08:00
 summary = "In this blog post, I talk about why it takes so long for me to come to term with my writting, the significant of writing to me, and why I encourage everyone else to also write for themselves."
 tags = ["reflection"]
 +++

@@ -1,6 +1,6 @@
 +++
 title = 'Idea for writing'
-date = 2024-01-06T09:00:00+08:00
+date = 2025-01-06T09:00:00+08:00
 draft = true
 +++
 
