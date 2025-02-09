@@ -1,17 +1,23 @@
 +++
-title = 'Draft'
-date = 2024-07-30T22:51:12+08:00
+title = 'Why do build a start-up?'
+date = 2025-02-02T17:00:00+08:00
+lastmod = 2025-02-02T17:00:00+08:00
+tags = ["reflection"]
+summary = ""
 draft = true
 +++
 
-# Why build a start-up?
+I have had a lot of people asking me that question, why would I want to build a start-up? Being a high achiever my whole life, It is actually rather easy for me to just pick the more down trotten path of taking up a job after university. It would have been much easier, but it would have felt wrong, at least for me. As PG put it:
 
-- Ambitious people of two types: those who know they're so good that they'll be net ahead in a world with higher variation, and those, particularly the young, who can afford to risk trying it to find out. 
-[Superlinear return](https://paulgraham.com/superlinear.html)
+> Ambitious people of two types: those who know they're so good that they'll be net ahead in a world with higher variation, and those, particularly the young, who can afford to risk trying it to find out - [Superlinear return, PG](https://paulgraham.com/superlinear.html)
 
-- I have an inkling of the former but have not proved that hence do not have sufficient confident that it is true.
-- But I am more than confident on the latter.
+I have always known I am ambitious and have high expectation (although unreasonable) for myself. It is what get me going when the going get tough. And although I don't know if am so good that I can always be ahead, but I definitely know that I am young enough to afford the risk. I have been working hard my whole university life to amass a small fortune. It is not enough to give me a head start compare to my other peers, but enough to allow me to be stupidly ambitious with my plan for 1 year or more. And that is all I need. A 1 year chance to see if I could pull it off. What is the worst case that could happen? I am 1 year late into the grind compare to my peer? I am already 2 years later by Vietnam standard honestly, so another year is not going to change much in my honest opinion. And beside, what does it mean to be later or earlier anyway. It is an arbitrary timeline set by social exepctation. We are not equal from the start, so there is no need to pretend like we are going to be equal now when we finish university. In any case, that is exactly what I did. I tried something for 1 year and it didn't work. I got a job immediately within 1 week of searching for it, amidst one of the hardest job search period in recent year. So I was right. And so was PG. When you are confident in your skill, aptitude and attitude, it would itself becomes a safety net for you to try something stupidly ambitious. 
 
-- Choose work you have a natural aptitude for and a deep interest in. Develop a habit of working on your own projects; it doesn't matter what they are so long as you find them excitingly ambitious. Work as hard as you can without burning out, and this will eventually bring you to one of the frontiers of knowledge. These look smooth from a distance, but up close they're full of gaps. Notice and explore such gaps, and if you're lucky one will expand into a whole new field. Take as much risk as you can afford; if you're not failing occasionally you're probably being too conservative. Seek out the best colleagues. Develop good taste and learn from the best examples. Be honest, especially with yourself. Exercise and eat and sleep well and avoid the more dangerous drugs. When in doubt, follow your curiosity. It never lies, and it knows more than you do about what's worth paying attention to.
+> Choose work you have a natural aptitude for and a deep interest in. Develop a habit of working on your own projects; it doesn't matter what they are so long as you find them excitingly ambitious. Work as hard as you can without burning out, and this will eventually bring you to one of the frontiers of knowledge. These look smooth from a distance, but up close they're full of gaps. Notice and explore such gaps, and if you're lucky one will expand into a whole new field. Take as much risk as you can afford; if you're not failing occasionally you're probably being too conservative. Seek out the best colleagues. Develop good taste and learn from the best examples. Be honest, especially with yourself. Exercise and eat and sleep well and avoid the more dangerous drugs. When in doubt, follow your curiosity. It never lies, and it knows more than you do about what's worth paying attention to.
 
--  A kind of work where everyone does about the same is unlikely to be one with superlinear returns.
+While my venture did fail, I did not have any regret about it. I have met so many great people. One of the few thing that is probably the most important thing you can learn in school is that the connection you make with like minded people is what serve you the most in the long term. You learn from them and they learn from you, the exchange of knowledge is invaluable. I also learn a great deal about the struggle and the length you have to go to get what you want. To make sure that you company has a steady stream of income, customers and new prospects is no walk in the park. It take real blood sweat and tear to win keep your company alive. It is much more vividly if you do it as a bootstrap founder like I did. When you see your bank account decreasing every single month with no stop in sign, it felt like walking through a dark forest trying to find your way with a damn matches as your only light source. It is dirty. It is gruelsome. It is scary. But it is necessary.
+
+>  A kind of work where everyone does about the same is unlikely to be one with superlinear returns.
+
+It is through the harrow experience that I learn what it truly meant to be a founder, to chase one dream, and to follow one own ambition. And the funny thing is, now that I know how horrible it is, I want to do it again in the future. Right now, I like where I am, among ambitious bright and smart people building really interesting thing. So I don''t see myself going back to become a founder for awhile, but it definitely will happen again. The return I get from my experience is exponential compare to the time that I spent. It was well-worth it. Every single moment of it. Yes, I might be behind, but does it really matter that I am behind if I take that time to strap myself to a booster rocket in the meanwhile? Afterall, I am not chasing something linear, I am going superlinear!
+

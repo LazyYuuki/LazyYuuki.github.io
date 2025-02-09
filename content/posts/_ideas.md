@@ -9,3 +9,5 @@ draft = true
 - How to use PyEIT
 
 - The question of tenacity vs brilliance which one is better to nature, and which one will have the best successful trait in their later careers?
+
+- Why is Zig safer in practice?
