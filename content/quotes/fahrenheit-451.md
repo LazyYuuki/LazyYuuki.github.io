@@ -1,6 +1,6 @@
 +++
 title = 'Fahrenheit 451'
-date = 2025-02-09T24:32:00+08:00
+date = 2025-02-09T00:32:00+08:00
 +++
 
 **Fahrenheit 451: 60th Anniversary - Ray Bradbury, Introduction by Neil Gaiman**
