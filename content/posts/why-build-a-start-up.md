@@ -1,5 +1,5 @@
 +++
-title = 'Why do build a start-up?'
+title = 'Why build a start-up?'
 date = 2025-02-02T17:00:00+08:00
 lastmod = 2025-02-02T17:00:00+08:00
 tags = ["reflection"]
