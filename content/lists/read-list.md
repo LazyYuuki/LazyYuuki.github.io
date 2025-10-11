@@ -9,6 +9,7 @@ It is just a place where I dump all the books I have read and want to read (non-
 - [ ] Deep Learning - Ian Goodfellow, Yoshua Bengio, Aaron Courville
 - [ ] Hacking Growth: How Today's Fastest-Growing Companies Drive Breakout Success - Sean Ellis
 - [ ] Traction: How Any Startup Can Achieve Explosive Customer Growth - Gabriel Weinberg, Justin Mares
+- [ ] The Old and New Testaments
 
 # 2024 (and before)
 
@@ -28,7 +29,7 @@ It is just a place where I dump all the books I have read and want to read (non-
 
 # 2025
 
-- [ ] Writing an interpreter in Go - Thorsten Ball
+- [x] Writing an interpreter in Go - Thorsten Ball
 - [x] Getting to YES: Neogitating Agreeement Without Giving In - Roger Fisher, William Ury
 - [x] So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love - Cal Newport
 - [x] Fahrenheit 451: 60th Anniversary - Ray Bradbury, Introduction by Neil Gaiman
