@@ -1,25 +1,32 @@
-# Hugo build output directories
-/public/
-/resources/
-/hugo_stats.json
+# build output
+dist/
+# generated types
+.astro/
 
-# Logs and temporary files
-*.log
-*.tmp
-braindump.md
+# dependencies
+node_modules/
 
-# OS-generated files
-.DS_Store
-Thumbs.db
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Backup files and local drafts
-*.bak
-*.swp
-*.swo
-*.swn
 
-# Generated asset directories (e.g., if you're using Hugo Pipes)
-resources/_gen/
-
-# Environment variables
+# environment variables
 .env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# setting folders
+.idea/
+.vscode/
+
+# agent working state
+.codex/
+.claude/
+
+# pagefind results
+public/pagefind/

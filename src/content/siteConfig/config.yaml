@@ -1,0 +1,49 @@
+- id: config
+  title: The Lazy Blog
+  description: A blog about engineering, artificial intelligence, and startups
+  url: https://lazyyuuki.github.io
+  locale: en
+
+  author:
+    name: Lazy Yuuki
+    bio: A software engineer interested in edge deep learning and reliable, cost-efficient production systems.
+    url: https://github.com/LazyYuuki
+    avatar: /avatar.png
+
+  navigation:
+    - title: Articles
+      url: /posts
+    - title: Quotes
+      url: /quotes
+    - title: Lists
+      url: /lists
+    - title: Archive
+      url: /archive
+    - title: About
+      url: /about
+
+  footerLinks:
+    - title: GitHub
+      url: https://github.com/LazyYuuki
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/buiquanghuy
+    - title: RSS
+      url: /rss.xml
+
+  social:
+    - title: GitHub
+      url: https://github.com/LazyYuuki
+      icon: github
+    - title: RSS
+      url: /rss.xml
+      icon: rss
+
+  heroText: Lazy, but not too lazy. Writing about engineering, AI, startups, and the things I learn while building.
+  footerCredits: ""
+  postsPerPage: 20
+  recentPosts: 5
+  showLogo: false
+
+  browse:
+    years: true
+    indexes: []

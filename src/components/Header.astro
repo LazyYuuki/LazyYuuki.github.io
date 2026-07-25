@@ -1,0 +1,81 @@
+---
+import { getConfig } from "@/utils/config";
+import { getAssetPath } from "@/utils/url";
+
+const siteConfig = await getConfig();
+---
+<header class="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-xs">
+  <div class="layout-page grid min-h-16 grid-cols-[1fr_auto] items-center gap-x-4 py-3 lg:flex lg:h-16 lg:py-0">
+    <a href="/" class="font-normal text-base italic shrink-0">
+      {siteConfig.title}
+    </a>
+    <div class="col-span-2 row-start-2 mt-3 min-w-0 overflow-x-auto lg:col-auto lg:row-auto lg:mt-0 lg:ml-auto lg:overflow-visible">
+      <nav class="flex w-max gap-4 font-mono text-xs tracking-wide text-muted-foreground">
+        {siteConfig.navigation?.map((item) => (
+          <a href={item.url} class="hover:text-foreground">{item.title}</a>
+        ))}
+      </nav>
+    </div>
+    <div class="col-start-2 row-start-1 flex items-center gap-2 lg:col-auto lg:row-auto">
+      <div class="hidden sm:flex">
+        <pagefind-modal-trigger placeholder="Search"></pagefind-modal-trigger>
+      </div>
+      <div class="flex sm:hidden">
+        <pagefind-modal-trigger compact hide-shortcut></pagefind-modal-trigger>
+      </div>
+      <button
+        type="button"
+        data-theme-toggle
+        aria-label="Switch to dark theme"
+        aria-pressed="false"
+        class="grid size-8 shrink-0 place-items-center rounded-xs border border-border text-muted-foreground hover:bg-muted hover:text-foreground"
+      >
+        <svg class="theme-icon-moon size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8Z" />
+        </svg>
+        <svg class="theme-icon-sun hidden size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.5" />
+          <path stroke-linecap="round" d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <pagefind-config bundle-path={getAssetPath("pagefind/")}></pagefind-config>
+  <pagefind-modal></pagefind-modal>
+</header>
+
+<style>
+  :global(:root[data-theme="dark"]) .theme-icon-moon {
+    display: none;
+  }
+
+  :global(:root[data-theme="dark"]) .theme-icon-sun {
+    display: block;
+  }
+</style>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>("[data-theme-toggle]");
+
+  if (button) {
+    const updateButton = (theme: "light" | "dark") => {
+      const isDark = theme === "dark";
+      button.setAttribute("aria-pressed", String(isDark));
+      button.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} theme`);
+    };
+
+    updateButton(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+
+    button.addEventListener("click", () => {
+      const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = theme;
+      updateButton(theme);
+
+      try {
+        localStorage.setItem("theme", theme);
+      } catch {
+        // The selected theme still applies for the current page.
+      }
+    });
+  }
+</script>
