@@ -1,63 +1,71 @@
-# Patrika
+# The Lazy Blog
 
-A notebook-inspired personal publishing theme built with Astro. Not a blog
-theme — it draws on commonplace books, field notebooks, literary journals,
-and printed magazines, favoring typography and whitespace over decoration.
+The personal publishing site of [Lazy Yuuki](https://github.com/LazyYuuki),
+focused on software engineering, artificial intelligence, startups, and lessons
+learned while building things.
 
-See [AGENTS.md](AGENTS.md) for the full design philosophy and current
-implementation reference.
+Live site: [lazyyuuki.github.io](https://lazyyuuki.github.io)
+
+The site uses Astro and Patrika's notebook-inspired visual language, with an
+emphasis on typography, whitespace, and long-form reading.
+
+## Content
+
+The writing is organized into a few distinct editorial types:
+
+- **Articles** are longer technical essays and personal reflections about AI,
+  engineering, writing, startups, and building. They live in
+  [`src/content/posts/`](src/content/posts/).
+- **Quotes** collect passages from books worth remembering. They live in
+  [`src/content/pages/quotes/`](src/content/pages/quotes/) and are published
+  under `/quotes`.
+- **Lists** track books, project ideas, ambitions, problems worth solving, and
+  words to live by. They live in
+  [`src/content/pages/lists/`](src/content/pages/lists/) and are published under
+  `/lists`.
+- **Notes** are provisional working notes and braindumps. They live in
+  [`src/content/notes/`](src/content/notes/). Draft notes are available during
+  local development but excluded from production builds.
+- **Pages** contain standalone material such as the About page and the Quotes
+  and Lists indexes. They live in [`src/content/pages/`](src/content/pages/).
+
+All dated entries are shown newest first. Draft and future-dated posts are not
+published in production.
 
 ## Features
 
-- **Content collections** for essays, notes, and standalone pages, plus a
-  config-as-content `siteConfig` collection.
-- **Obsidian-flavored markdown** — wikilinks (`[[Page]]`, `[[Page#Heading]]`),
-  image embeds, `%%comments%%`, `==highlights==`, and `:::aside`/`:::annotation`
-  directives, powered by a native [Sätteri](https://www.npmjs.com/package/satteri)
-  markdown pipeline (not remark/unified).
-- **Backlinks** between notes, computed from wikilinks.
-- **Inline image galleries** with a lightbox (GLightbox) for consecutive
-  images in a post or note.
-- **A generic browse system** (`/browse`) driven entirely by an optional
-  `meta` object in frontmatter and a `browse` config block — no hardcoded
-  metadata keys.
-- **Search** via [Pagefind](https://pagefind.app)'s native Component UI.
-- **RSS and sitemap** out of the box.
+- Astro content collections with validated frontmatter
+- Obsidian-style wikilinks, image embeds, highlights, and annotations
+- Syntax highlighting and Markdown footnotes
+- Pagefind full-text search
+- Light and dark themes with a persisted preference
+- Generated Open Graph images, RSS, and sitemap
+- Static deployment to GitHub Pages
 
-## Quickstart
+## Development
+
+Requires Node.js 22.12 or newer and pnpm 10.14.0.
 
 ```sh
-pnpm install
-pnpm dev
+corepack pnpm install
+corepack pnpm dev
 ```
 
-Then:
+The development server runs at `http://localhost:4321`.
 
-1. Edit [src/content/siteConfig/config.yaml](src/content/siteConfig/config.yaml)
-   — set your real domain (`url`), author, navigation, and social links.
-2. Set the matching `site` value in [astro.config.mjs](astro.config.mjs)
-   (required for RSS/sitemap to generate correct absolute URLs).
-3. Add your own writing under `src/content/posts/`, `src/content/notes/`,
-   and `src/content/pages/`, replacing the sample entries there.
+| Command | Action |
+| :--- | :--- |
+| `corepack pnpm dev` | Start the Astro development server in the background |
+| `corepack pnpm build` | Build the production site and Pagefind index |
+| `corepack pnpm preview` | Preview the production build locally |
+| `corepack pnpm astro dev stop` | Stop the background development server |
 
-## Commands
+## Configuration
 
-| Command        | Action                                                                 |
-| :------------- | :---------------------------------------------------------------------|
-| `pnpm install` | Install dependencies                                                  |
-| `pnpm dev`     | Start the dev server at `localhost:4321`                               |
-| `pnpm build`   | Build to `./dist/`, then build the Pagefind search index and copy it into `public/` |
-| `pnpm preview` | Preview the production build locally                                   |
-| `pnpm astro …` | Run any Astro CLI command (`astro check`, `astro add`, …)              |
+Site identity, navigation, author details, and content settings are configured
+in [`src/content/siteConfig/config.yaml`](src/content/siteConfig/config.yaml).
+The canonical deployment URL is also set in
+[`astro.config.mjs`](astro.config.mjs).
 
-## Customization
-
-- **Fonts** — the `fonts` array in `astro.config.mjs`.
-- **Colors and typography** — `src/styles/`.
-- **Browse dimensions** (e.g. places, trips) — the `browse` key in
-  `config.yaml`; each entry turns a `meta.<key>` frontmatter field into a
-  browsable index at `/browse/<slug>`.
-
-## Learn more
-
-[Astro documentation](https://docs.astro.build)
+Pushes to `main` are built and deployed to GitHub Pages through
+[`.github/workflows/deploy.yaml`](.github/workflows/deploy.yaml).
