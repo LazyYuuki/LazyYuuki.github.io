@@ -40,17 +40,9 @@ function isVisiblePost(post: Post): boolean {
 }
 
 function sortPosts(posts: Post[]): Post[] {
-  return posts.sort((a, b) => {
-    const aDate = new Date(
-      a.data.updated ?? a.data.published
-    ).getTime();
-
-    const bDate = new Date(
-      b.data.updated ?? b.data.published
-    ).getTime();
-
-    return bDate - aDate;
-  });
+  return posts.sort(
+    (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
+  );
 }
 
 export async function getAllPosts(): Promise<Post[]> {
@@ -106,17 +98,9 @@ function isVisibleNote(note: Note): boolean {
 }
 
 function sortNotes(notes: Note[]): Note[] {
-  return notes.sort((a, b) => {
-    const aDate = new Date(
-      a.data.updated ?? a.data.published
-    ).getTime();
-
-    const bDate = new Date(
-      b.data.updated ?? b.data.published
-    ).getTime();
-
-    return bDate - aDate;
-  });
+  return notes.sort(
+    (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
+  );
 }
 
 export async function getAllNotes(): Promise<Note[]> {
