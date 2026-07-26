@@ -328,6 +328,8 @@ astro dev --background
 
 Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
 
+Use standard Git directly for version control in this repository. Do not use GitButler or the `but` CLI.
+
 ## Documentation
 
 Full documentation: https://docs.astro.build

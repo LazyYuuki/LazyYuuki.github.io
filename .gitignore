@@ -27,6 +27,9 @@ pnpm-debug.log*
 # agent working state
 .codex/
 .claude/
+opencode.json
 
 # pagefind results
 public/pagefind/
+
+braindump.md
