@@ -12,6 +12,15 @@ It is just a place where I dump all the books I have read and want to read (non-
 - [ ] Traction: How Any Startup Can Achieve Explosive Customer Growth - Gabriel Weinberg, Justin Mares
 - [ ] The Old and New Testaments
 
+# 2026
+
+# 2025
+
+- [x] Writing an interpreter in Go - Thorsten Ball
+- [x] Getting to YES: Neogitating Agreeement Without Giving In - Roger Fisher, William Ury
+- [x] So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love - Cal Newport
+- [x] Fahrenheit 451: 60th Anniversary - Ray Bradbury, Introduction by Neil Gaiman
+
 # 2024 (and before)
 
 - [x] Doing Good Better: How Effective Altruism Can Help You Help Others, Do Work that Matters, and Make Smarter Choices About Giving Back - William Macaskill
@@ -28,9 +37,3 @@ It is just a place where I dump all the books I have read and want to read (non-
 - [x] Demand-side sales 101: Stop selling and help your customers make progress - Bob Moesta, Greg Engle
 - [x] The Subtle Art of Not Giving A Fuck: A counterintuitive approach to living a good life - Mark Manson
 
-# 2025
-
-- [x] Writing an interpreter in Go - Thorsten Ball
-- [x] Getting to YES: Neogitating Agreeement Without Giving In - Roger Fisher, William Ury
-- [x] So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love - Cal Newport
-- [x] Fahrenheit 451: 60th Anniversary - Ray Bradbury, Introduction by Neil Gaiman
