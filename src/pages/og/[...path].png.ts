@@ -46,7 +46,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   add('home', { eyebrow: siteConfig.tagline ?? siteConfig.title, title: siteConfig.title });
   add('posts', { eyebrow: siteConfig.title, title: 'Essays' });
   add('notes', { eyebrow: siteConfig.title, title: 'Notes' });
-  add('archive', { eyebrow: siteConfig.title, title: 'Archive' });
   add('browse', { eyebrow: siteConfig.title, title: 'Browse' });
   add('browse/years', { eyebrow: 'Browse', title: 'Years' });
 

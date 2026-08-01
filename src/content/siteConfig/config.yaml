@@ -17,8 +17,8 @@
       url: /quotes
     - title: Lists
       url: /lists
-    - title: Archive
-      url: /archive
+    - title: Notes
+      url: /notes
     - title: About
       url: /about
 

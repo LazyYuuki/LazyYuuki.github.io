@@ -1,3 +1,8 @@
+---
+title: What it means to lead
+published: 2026-08-01
+---
+
 # What it means to lead
 
 - It is easy to be popular, it is harder to lead

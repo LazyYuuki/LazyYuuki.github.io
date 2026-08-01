@@ -13,7 +13,6 @@ export const defaultConfig: UserConfig = {
   navigation: [
     { title: 'Essays',  url: '/posts' },
     { title: 'Notes',   url: '/notes' },
-    { title: 'Archive', url: '/archive' },
     { title: 'About',   url: '/about' },
   ],
 
