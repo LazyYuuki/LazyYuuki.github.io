@@ -3,12 +3,13 @@ title: Data Structure Fundamental
 published: 2026-08-02
 ---
 
-- Linear DS
+## Linear DS
     - Array
     - LinkedList
     - Stacks
     - Queues
-- Non-linear
+
+## Non-linear
     - Tree
         - Binary Search
         - AVL / Red-black
