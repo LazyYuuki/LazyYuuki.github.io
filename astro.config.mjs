@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 
 import sitemap from "@astrojs/sitemap";
-import { wikilinkResolver, directiveToHtml, obsidianTextFormatting } from './src/plugins/satteri.ts';
+import { wikilinkResolver, externalLinkTarget, directiveToHtml, obsidianTextFormatting } from './src/plugins/satteri.ts';
 import { resolveVaultImagePaths, imageAttributes, galleryGrouping } from './src/plugins/satteri-gallery.ts';
 
 // https://astro.build/config
@@ -56,7 +56,7 @@ export default defineConfig({
   markdown: {
     processor: satteri({
       mdastPlugins: [directiveToHtml, obsidianTextFormatting, resolveVaultImagePaths],
-      hastPlugins: [wikilinkResolver, imageAttributes, galleryGrouping],
+      hastPlugins: [wikilinkResolver, externalLinkTarget, imageAttributes, galleryGrouping],
       features: {
         wikilinks: true,
         directive: true,

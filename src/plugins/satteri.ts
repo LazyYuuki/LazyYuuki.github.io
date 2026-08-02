@@ -54,6 +54,20 @@ export const wikilinkResolver = {
   },
 };
 
+export const externalLinkTarget = {
+  name: 'external-link-target',
+  element: {
+    filter: ['a'],
+    visit(node: any, ctx: any) {
+      const href = node.properties?.href as string | undefined;
+      if (!href || !/^(?:https?:)?\/\//i.test(href)) return;
+
+      ctx.setProperty(node, 'target', '_blank');
+      ctx.setProperty(node, 'rel', 'noopener noreferrer');
+    },
+  },
+};
+
 // ── Text extraction from MDAST child nodes ────────────────────────────────────
 function extractHtml(node: any): string {
   if (!node) return '';

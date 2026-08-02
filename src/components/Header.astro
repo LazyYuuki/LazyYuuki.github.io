@@ -3,6 +3,7 @@ import { getConfig } from "@/utils/config";
 import { getAssetPath } from "@/utils/url";
 
 const siteConfig = await getConfig();
+const isExternal = (url: string) => /^(?:https?:)?\/\//i.test(url);
 ---
 <header class="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-xs">
   <div class="layout-page grid min-h-16 grid-cols-[1fr_auto] items-center gap-x-4 py-3 lg:flex lg:h-16 lg:py-0">
@@ -12,7 +13,12 @@ const siteConfig = await getConfig();
     <div class="col-span-2 row-start-2 mt-3 min-w-0 overflow-x-auto lg:col-auto lg:row-auto lg:mt-0 lg:ml-auto lg:overflow-visible">
       <nav class="flex w-max gap-4 font-mono text-xs tracking-wide text-muted-foreground">
         {siteConfig.navigation?.map((item) => (
-          <a href={item.url} class="hover:text-foreground">{item.title}</a>
+          <a
+            href={item.url}
+            target={isExternal(item.url) ? "_blank" : undefined}
+            rel={isExternal(item.url) ? "noopener noreferrer" : undefined}
+            class="hover:text-foreground"
+          >{item.title}</a>
         ))}
       </nav>
     </div>
