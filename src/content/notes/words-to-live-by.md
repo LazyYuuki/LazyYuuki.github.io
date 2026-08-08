@@ -1,6 +1,6 @@
 ---
-title: Template for life
-published: 2026-08-02
+title: Words to live by
+lang: en
 ---
 
 1. Don't bother your founder with fight, only notify them when the fight is escalating out of control, if it is resolved, just don't bother them
@@ -30,4 +30,7 @@ published: 2026-08-02
 13. Sounds obvious, but people only care about things that get done, not how it get done. So focus on reducing the step and optimizing for step ratio to thing get done. Less step => better experience.
 
 14. TPF is about “doing things right” internally—making sure the product is feasible and effective given the current technology. PMF is about “doing the right things” for users—ensuring the product solves real problems and is embraced by the market.
+
+15. You can only succeed, if the people around you want to help you succeed. So live in a way, that would make other want to help you.
+
 
