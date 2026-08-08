@@ -1,6 +1,6 @@
 ---
-title: Words to live by
-lang: en
+title: Words to live by 
+published: 2026-08-01
 ---
 
 1. Don't bother your founder with fight, only notify them when the fight is escalating out of control, if it is resolved, just don't bother them
