@@ -4,7 +4,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import ImageWrapper from "@/components/ImageWrapper.astro";
 import GalleryLightbox from "@/components/GalleryLightbox.astro";
 import StructuredData from "@/components/StructuredData.astro";
-import { getAllPosts, getPostSlugPath } from "@/utils/content";
+import LanguageSwitch from "@/components/LanguageSwitch.astro";
+import { getAllPosts, getPostSlugPath, getPostUrl, getTranslationLinks } from "@/utils/content";
 import { getCoverImage } from "@/utils/image";
 import { formatDate, calculateReadingTime } from "@/utils/text";
 import { getAssetPath, absoluteUrl, getOgImagePath } from "@/utils/url";
@@ -13,10 +14,14 @@ import { getConfig } from "@/utils/config";
 export async function getStaticPaths() {
   const posts = await getAllPosts();
 
-  return posts.map((post) => ({
-    params: { slug: getPostSlugPath(post.id, post.filePath) },
-    props: { post },
-  }));
+  return posts.flatMap((post) => {
+    const slug = getPostSlugPath(post.id, post.filePath);
+    const path = { params: { slug }, props: { post } };
+
+    return post.data.lang === "en" && slug.endsWith("/en")
+      ? [path, { params: { slug: slug.replace(/\/en$/, "") }, props: { post } }]
+      : [path];
+  });
 }
 
 const { post } = Astro.props;
@@ -26,8 +31,15 @@ const siteConfig = await getConfig();
 const cover = getCoverImage(post.data.cover);
 const date = formatDate(post.data.published);
 const readingTime = calculateReadingTime(post.body ?? "");
+const translations = getTranslationLinks(post, await getAllPosts());
+const essaysLabel = post.data.lang === "vi" ? "Bài viết" : "Essays";
+const readingTimeLabel = post.data.lang === "vi"
+  ? `${readingTime.minutes} phút đọc`
+  : readingTime.text;
 
 const postPath = `/posts/${getPostSlugPath(post.id, post.filePath)}`;
+const canonicalHref = getPostUrl(post.id, post.filePath);
+const isAlias = Astro.params.slug !== getPostSlugPath(post.id, post.filePath);
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -36,20 +48,32 @@ const schema = {
   datePublished: post.data.published.toISOString(),
   dateModified: (post.data.updated ?? post.data.published).toISOString(),
   author: { "@type": "Person", name: siteConfig.author.name },
+  inLanguage: post.data.lang,
   image: absoluteUrl(getOgImagePath(postPath), Astro.site),
   url: absoluteUrl(postPath, Astro.site),
 };
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description} type="article">
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  type="article"
+  activePath={canonicalHref}
+  canonicalHref={canonicalHref}
+  lang={post.data.lang}
+  alternates={translations}
+>
   <StructuredData schema={schema} slot="head" />
   <div class="layout-content">
-    <article class="annotated markdown-content mx-auto max-w-4xl py-8">
+    <article
+      class="annotated markdown-content mx-auto max-w-4xl py-8"
+      data-pagefind-ignore={isAlias ? "all" : undefined}
+    >
       <a
         href={getAssetPath("posts")}
         class="not-prose font-mono text-xs uppercase tracking-wide text-clay hover:underline"
       >
-        ← Essays
+        ← {essaysLabel}
       </a>
 
       {cover && (
@@ -65,6 +89,10 @@ const schema = {
         {post.data.title}
       </h1>
 
+      <div class="not-prose mt-4">
+        <LanguageSwitch currentLang={post.data.lang} translations={translations} />
+      </div>
+
       <div class="not-prose mt-4 flex items-center gap-2">
         <time
           datetime={post.data.published.toISOString()}
@@ -74,7 +102,7 @@ const schema = {
         </time>
         <span class="text-muted-foreground/50">·</span>
         <span class="font-mono text-xs uppercase text-muted-foreground">
-          {readingTime.text}
+          {readingTimeLabel}
         </span>
       </div>
 
@@ -85,6 +113,7 @@ const schema = {
         <meta data-pagefind-sort="date[content]" content={post.data.published.toISOString()} />
         <meta data-pagefind-filter="collection[content]" content={post.collection} />
         <meta data-pagefind-filter="category[content]" content={post.data.category} />
+        <meta data-pagefind-filter="language[content]" content={post.data.lang} />
         <Content />
       </aside>
     </article>

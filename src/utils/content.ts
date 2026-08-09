@@ -19,6 +19,13 @@ export type AnyEntry = {
 };
 
 export type AnyCollectionEntry = Post | Note;
+export type TranslatableEntry = Post | Note | Page;
+export type ContentLanguage = TranslatableEntry["data"]["lang"];
+
+export type TranslationLink = {
+  lang: ContentLanguage;
+  href: string;
+};
 
 let postsCache: Post[] | null = null;
 let pagesCache: Page[] | null = null;
@@ -121,6 +128,22 @@ export async function getAllNotes(): Promise<Note[]> {
  */
 export async function getAllEntries(): Promise<(Post | Note)[]> {
   const [posts, notes] = await Promise.all([getAllPosts(), getAllNotes()]);
+
+  return [...posts, ...notes].sort(
+    (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
+  );
+}
+
+export async function getPrimaryPosts(): Promise<Post[]> {
+  return getPrimaryTranslations(await getAllPosts());
+}
+
+export async function getPrimaryNotes(): Promise<Note[]> {
+  return getPrimaryTranslations(await getAllNotes());
+}
+
+export async function getPrimaryEntries(): Promise<(Post | Note)[]> {
+  const [posts, notes] = await Promise.all([getPrimaryPosts(), getPrimaryNotes()]);
 
   return [...posts, ...notes].sort(
     (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
@@ -336,6 +359,82 @@ export function getNoteUrl(
   );
 }
 
+export function getEntryUrl(entry: TranslatableEntry): string {
+  if (entry.collection === "posts") {
+    return getPostUrl(entry.id, entry.filePath);
+  }
+
+  if (entry.collection === "notes") {
+    return getNoteUrl(entry.id, entry.filePath);
+  }
+
+  return getPageUrl(entry.id, entry.filePath);
+}
+
+// ── Translations ───────────────────────────────────────────────────────────────
+
+function compareTranslations<T extends TranslatableEntry>(a: T, b: T): number {
+  if (a.data.lang === b.data.lang) return a.id.localeCompare(b.id);
+  if (a.data.lang === "en") return -1;
+  if (b.data.lang === "en") return 1;
+  return a.data.lang.localeCompare(b.data.lang);
+}
+
+function getTranslationGroupKey(entry: TranslatableEntry): string {
+  return entry.data.translationKey ?? `${entry.collection}:${entry.id}`;
+}
+
+export function groupTranslationVariants<T extends TranslatableEntry>(
+  entries: T[]
+): Map<string, T[]> {
+  const groups = new Map<string, T[]>();
+
+  for (const entry of entries) {
+    const key = getTranslationGroupKey(entry);
+    const group = groups.get(key) ?? [];
+    group.push(entry);
+    groups.set(key, group);
+  }
+
+  for (const group of groups.values()) {
+    group.sort(compareTranslations);
+  }
+
+  return groups;
+}
+
+export function findTranslationVariants<T extends TranslatableEntry>(
+  entry: T,
+  entries: T[]
+): T[] {
+  return groupTranslationVariants(entries).get(getTranslationGroupKey(entry)) ?? [];
+}
+
+export function getPrimaryTranslation<T extends TranslatableEntry>(
+  variants: T[]
+): T | undefined {
+  return [...variants].sort(compareTranslations)[0];
+}
+
+export function getPrimaryTranslations<T extends TranslatableEntry>(entries: T[]): T[] {
+  return [...groupTranslationVariants(entries).values()]
+    .map(getPrimaryTranslation)
+    .filter((entry): entry is T => entry !== undefined);
+}
+
+export function getTranslationLinks<T extends TranslatableEntry>(
+  entry: T,
+  entries: T[]
+): TranslationLink[] {
+  const variants = findTranslationVariants(entry, entries);
+  if (variants.length < 2) return [];
+
+  return variants.map((variant) => ({
+    lang: variant.data.lang,
+    href: getEntryUrl(variant),
+  }));
+}
+
 export async function buildBacklinkMap(): Promise<Map<string, { title: string; slug: string }[]>> {
   const notes = await getAllNotes();
   const map = new Map<string, { title: string; slug: string }[]>();
@@ -350,14 +449,17 @@ export async function buildBacklinkMap(): Promise<Map<string, { title: string; s
     for (const match of body.matchAll(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g)) {
       const target = match[1].split('#')[0].trim();
       if (!target) continue;
-      const key = slugify(target);
+      const key = `${slugify(target)}/${note.data.lang}`;
       if (!map.has(key)) map.set(key, []);
       map.get(key)!.push(entry);
     }
 
     // markdown links: [text](/notes/slug)
     for (const match of body.matchAll(/\[([^\]]+)\]\(\/notes\/([^)#]+)/g)) {
-      const key = match[2];
+      const linkedSlug = match[2];
+      const key = /\/(?:en|vi)$/.test(linkedSlug)
+        ? linkedSlug
+        : `${linkedSlug}/${note.data.lang}`;
       if (!map.has(key)) map.set(key, []);
       map.get(key)!.push(entry);
     }

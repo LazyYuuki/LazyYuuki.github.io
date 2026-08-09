@@ -1,0 +1,36 @@
+---
+import type { ContentLanguage, TranslationLink } from "@/utils/content";
+
+type Props = {
+  currentLang: ContentLanguage;
+  translations: TranslationLink[];
+};
+
+const { currentLang, translations } = Astro.props;
+const labels = currentLang === "vi"
+  ? { en: "Tiếng Anh", vi: "Tiếng Việt" }
+  : { en: "English", vi: "Vietnamese" };
+const ariaLabel = currentLang === "vi" ? "Bản dịch" : "Translations";
+---
+
+{translations.length > 1 && (
+  <nav aria-label={ariaLabel} class="not-prose font-mono text-xs uppercase tracking-wide text-muted-foreground">
+    {translations.map((translation, index) => (
+      <>
+        {index > 0 && <span aria-hidden="true" class="mx-1.5 text-muted-foreground/40">/</span>}
+        <a
+          href={translation.href}
+          lang={translation.lang}
+          hreflang={translation.lang}
+          aria-current={translation.lang === currentLang ? "page" : undefined}
+          class:list={[
+            "underline-offset-4 hover:text-foreground hover:underline",
+            translation.lang === currentLang && "text-foreground underline",
+          ]}
+        >
+          {labels[translation.lang]}
+        </a>
+      </>
+    ))}
+  </nav>
+)}

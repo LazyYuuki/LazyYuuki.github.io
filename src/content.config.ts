@@ -17,9 +17,10 @@ function removeDupsAndLowerCase(array: string[]) {
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/pages' }),
   schema: z.object({
-    title:   z.string(),
-    updated: z.coerce.date().optional(),
-    lang:    z.string().optional(),
+    title:          z.string(),
+    updated:        z.coerce.date().optional(),
+    lang:           z.enum(['en', 'vi']),
+    translationKey: z.string().min(1).optional(),
   }),
 });
 
@@ -40,7 +41,8 @@ const posts = defineCollection({
     cover:       z.string().optional(),
     featured:    z.boolean().default(false),
     draft:       z.boolean().default(false),
-    lang:        z.string().optional(),
+    lang:        z.enum(['en', 'vi']),
+    translationKey: z.string().min(1),
     series:      z.string().optional(),
     seriesOrder: z.number().int().positive().optional(),
     meta:        metaSchema,
@@ -58,8 +60,9 @@ const notes = defineCollection({
     category:    z.string().optional(),
     color:       z.string().optional(),
     tags:      z.array(z.string()).transform(removeDupsAndLowerCase).optional(),
-    lang:      z.string().optional(),
-    meta:      metaSchema,
+    lang:           z.enum(['en', 'vi']),
+    translationKey: z.string().min(1),
+    meta:           metaSchema,
   }),
 });
 

@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import { getConfig } from "@/utils/config";
 import { getAssetPath, absoluteUrl, getOgImagePath } from "@/utils/url";
+import type { TranslationLink } from "@/utils/content";
 import "@/styles/global.css";
 
 type Props = {
@@ -12,6 +13,9 @@ type Props = {
   ogImage?: string;
   type?: "website" | "article";
   activePath?: string;
+  canonicalHref?: string;
+  lang?: string;
+  alternates?: TranslationLink[];
 };
 
 const siteConfig = await getConfig();
@@ -22,19 +26,28 @@ const {
   ogImage,
   type = "website",
   activePath = Astro.url.pathname,
+  canonicalHref = Astro.url.pathname,
+  lang = siteConfig.locale ?? "en",
+  alternates = [],
 } = Astro.props;
 
 const pageTitle = title ? `${title} · ${siteConfig.title}` : siteConfig.title;
 
 const canonicalUrl = Astro.site
-  ? new URL(Astro.url.pathname, Astro.site).href
-  : Astro.url.href;
+  ? new URL(canonicalHref, Astro.site).href
+  : new URL(canonicalHref, Astro.url.origin).href;
 
 const ogImageUrl = absoluteUrl(ogImage ?? getOgImagePath(activePath), Astro.site);
+const defaultAlternate = alternates.find((alternate) => alternate.lang === "en");
+
+const alternateUrl = (href: string) => new URL(
+  href,
+  Astro.site ?? Astro.url.origin
+).href;
 
 ---
 <!doctype html>
-<html class="overflow-y-scroll scroll-smooth">
+<html lang={lang} class="overflow-y-scroll scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,6 +75,12 @@ const ogImageUrl = absoluteUrl(ogImage ?? getOgImagePath(activePath), Astro.site
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
+    {alternates.map((alternate) => (
+      <link rel="alternate" hreflang={alternate.lang} href={alternateUrl(alternate.href)} />
+    ))}
+    {defaultAlternate && (
+      <link rel="alternate" hreflang="x-default" href={alternateUrl(defaultAlternate.href)} />
+    )}
     <link rel="icon" type="image/png" href="/favicon.png" />
 
     <meta property="og:type" content={type} />

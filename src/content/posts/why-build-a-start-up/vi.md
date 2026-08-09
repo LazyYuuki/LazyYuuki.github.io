@@ -1,0 +1,26 @@
+---
+title: Tại sao xây dựng một công ty khởi nghiệp?
+description: Suy ngẫm về tham vọng, rủi ro, thất bại và lý do trải nghiệm xây dựng một công ty khởi nghiệp vẫn xứng đáng.
+published: 2025-02-02T17:00:00+08:00
+updated: 2025-02-02T17:00:00+08:00
+category: Reflection
+tags:
+  - reflection
+draft: false
+lang: vi
+translationKey: why-build-a-start-up
+---
+
+Rất nhiều người đã hỏi tôi câu đó: tại sao tôi lại muốn xây dựng một công ty khởi nghiệp? Là một người luôn đạt thành tích cao trong suốt cuộc đời, thực ra tôi có thể dễ dàng chọn con đường quen thuộc hơn là tìm một công việc sau khi tốt nghiệp đại học. Làm vậy sẽ dễ dàng hơn nhiều, nhưng ít nhất với tôi, nó sẽ khiến tôi cảm thấy không đúng. Như PG đã nói:
+
+> Ambitious people of two types: those who know they're so good that they'll be net ahead in a world with higher variation, and those, particularly the young, who can afford to risk trying it to find out - [Superlinear return, PG](https://paulgraham.com/superlinear.html)
+
+Tôi luôn biết mình có tham vọng và đặt kỳ vọng cao (dù phi lý) vào bản thân. Đó là điều giúp tôi tiếp tục khi mọi chuyện trở nên khó khăn. Và dù không biết mình có đủ giỏi để luôn dẫn trước hay không, tôi chắc chắn mình còn đủ trẻ để chấp nhận rủi ro. Tôi đã làm việc chăm chỉ trong suốt những năm đại học để tích lũy một khoản tiền nhỏ. Nó không đủ để cho tôi lợi thế ban đầu so với những người đồng trang lứa, nhưng đủ để tôi theo đuổi kế hoạch đầy tham vọng đến liều lĩnh trong một năm hoặc hơn. Và đó là tất cả những gì tôi cần. Một năm để xem liệu mình có thể làm được hay không. Điều tệ nhất có thể xảy ra là gì? Tôi bước vào guồng quay muộn hơn bạn bè một năm sao? Thật lòng mà nói, theo tiêu chuẩn Việt Nam thì tôi đã muộn hơn hai năm rồi, nên theo tôi thêm một năm nữa cũng chẳng thay đổi nhiều. Hơn nữa, sớm hay muộn thực sự có ý nghĩa gì? Đó chỉ là một mốc thời gian tùy ý do kỳ vọng xã hội đặt ra. Ngay từ đầu chúng ta đã không bình đẳng, nên không cần giả vờ rằng giờ đây, khi tốt nghiệp đại học, chúng ta sẽ trở nên bình đẳng. Dù sao thì đó chính xác là điều tôi đã làm. Tôi thử làm một việc trong một năm và nó không thành công. Tôi tìm được việc ngay trong vòng một tuần, giữa một trong những giai đoạn tìm việc khó khăn nhất những năm gần đây. Vậy là tôi đã đúng. Và PG cũng đúng. Khi bạn tự tin vào kỹ năng, năng lực và thái độ của mình, chính những điều đó sẽ trở thành tấm lưới an toàn để bạn thử làm một điều tham vọng đến liều lĩnh.
+
+> Choose work you have a natural aptitude for and a deep interest in. Develop a habit of working on your own projects; it doesn't matter what they are so long as you find them excitingly ambitious. Work as hard as you can without burning out, and this will eventually bring you to one of the frontiers of knowledge. These look smooth from a distance, but up close they're full of gaps. Notice and explore such gaps, and if you're lucky one will expand into a whole new field. Take as much risk as you can afford; if you're not failing occasionally you're probably being too conservative. Seek out the best colleagues. Develop good taste and learn from the best examples. Be honest, especially with yourself. Exercise and eat and sleep well and avoid the more dangerous drugs. When in doubt, follow your curiosity. It never lies, and it knows more than you do about what's worth paying attention to.
+
+Dù dự án của tôi thất bại, tôi không hề hối tiếc. Tôi đã gặp rất nhiều người tuyệt vời. Một trong số ít điều có lẽ quan trọng nhất mà bạn có thể học được ở trường là những mối quan hệ bạn tạo dựng với những người cùng chí hướng sẽ giúp ích cho bạn nhiều nhất về lâu dài. Bạn học từ họ và họ học từ bạn; sự trao đổi kiến thức ấy là vô giá. Tôi cũng học được rất nhiều về những khó khăn và quãng đường phải đi để đạt được điều mình muốn. Đảm bảo công ty có nguồn thu nhập, khách hàng và khách hàng tiềm năng mới ổn định hoàn toàn không phải chuyện dễ dàng. Cần phải đổ mồ hôi, nước mắt và cả máu thực sự để giữ cho công ty tồn tại. Điều đó càng rõ rệt hơn khi bạn là một nhà sáng lập tự lực như tôi. Khi nhìn tài khoản ngân hàng giảm xuống từng tháng mà không thấy dấu hiệu dừng lại, cảm giác giống như đi xuyên qua một khu rừng tối, cố tìm đường chỉ với một que diêm chết tiệt làm nguồn sáng duy nhất. Nó bẩn thỉu. Nó khắc nghiệt. Nó đáng sợ. Nhưng nó cần thiết.
+
+>  A kind of work where everyone does about the same is unlikely to be one with superlinear returns.
+
+Chính qua trải nghiệm khắc nghiệt ấy, tôi hiểu được ý nghĩa thực sự của việc làm một nhà sáng lập, theo đuổi một giấc mơ và đi theo tham vọng của riêng mình. Và điều buồn cười là giờ đây, khi đã biết nó kinh khủng đến mức nào, tôi vẫn muốn làm lại trong tương lai. Hiện tại, tôi thích nơi mình đang ở, giữa những con người tham vọng, sáng dạ và thông minh đang xây dựng những thứ thực sự thú vị. Vì vậy, tôi chưa thấy mình sẽ sớm quay lại làm nhà sáng lập, nhưng chắc chắn điều đó sẽ xảy ra lần nữa. Lợi ích tôi nhận được từ trải nghiệm này tăng theo cấp số nhân so với thời gian đã bỏ ra. Nó hoàn toàn xứng đáng. Từng khoảnh khắc một. Đúng, có thể tôi đang chậm hơn, nhưng việc đó có thực sự quan trọng nếu trong thời gian ấy tôi tự buộc mình vào một tên lửa đẩy? Suy cho cùng, tôi không theo đuổi thứ gì đó tuyến tính, tôi đang tiến theo đường siêu tuyến tính!

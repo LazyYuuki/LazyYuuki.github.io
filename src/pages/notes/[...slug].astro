@@ -3,7 +3,8 @@ import { render } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import GalleryLightbox from "@/components/GalleryLightbox.astro";
 import StructuredData from "@/components/StructuredData.astro";
-import { getAllNotes, getNoteSlugPath, buildBacklinkMap } from "@/utils/content";
+import LanguageSwitch from "@/components/LanguageSwitch.astro";
+import { getAllNotes, getNoteSlugPath, getNoteUrl, buildBacklinkMap, getTranslationLinks } from "@/utils/content";
 import { formatDate } from "@/utils/text";
 import { getAssetPath, absoluteUrl, getOgImagePath } from "@/utils/url";
 import { getConfig } from "@/utils/config";
@@ -11,10 +12,14 @@ import { getConfig } from "@/utils/config";
 export async function getStaticPaths() {
   const notes = await getAllNotes();
 
-  return notes.map((note) => ({
-    params: { slug: getNoteSlugPath(note.id, note.filePath) },
-    props: { note },
-  }));
+  return notes.flatMap((note) => {
+    const slug = getNoteSlugPath(note.id, note.filePath);
+    const path = { params: { slug }, props: { note } };
+
+    return note.data.lang === "en" && slug.endsWith("/en")
+      ? [path, { params: { slug: slug.replace(/\/en$/, "") }, props: { note } }]
+      : [path];
+  });
 }
 
 const { note } = Astro.props;
@@ -22,6 +27,9 @@ const { Content } = await render(note);
 
 const siteConfig = await getConfig();
 const date = formatDate(note.data.published);
+const translations = getTranslationLinks(note, await getAllNotes());
+const notesLabel = note.data.lang === "vi" ? "Ghi chú" : "Notes";
+const backlinksLabel = note.data.lang === "vi" ? "Liên kết ngược" : "Backlinks";
 
 const backlinkMap = await buildBacklinkMap();
 const noteSlug = getNoteSlugPath(note.id, note.filePath);
@@ -34,6 +42,8 @@ const backlinks = [
 ];
 
 const notePath = `/notes/${noteSlug}`;
+const canonicalHref = getNoteUrl(note.id, note.filePath);
+const isAlias = Astro.params.slug !== noteSlug;
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -42,25 +52,41 @@ const schema = {
   datePublished: note.data.published.toISOString(),
   dateModified: (note.data.updated ?? note.data.published).toISOString(),
   author: { "@type": "Person", name: siteConfig.author.name },
+  inLanguage: note.data.lang,
   image: absoluteUrl(getOgImagePath(notePath), Astro.site),
   url: absoluteUrl(notePath, Astro.site),
 };
 ---
 
-<BaseLayout title={note.data.title} description={note.data.description} type="article">
+<BaseLayout
+  title={note.data.title}
+  description={note.data.description}
+  type="article"
+  activePath={canonicalHref}
+  canonicalHref={canonicalHref}
+  lang={note.data.lang}
+  alternates={translations}
+>
   <StructuredData schema={schema} slot="head" />
   <div class="layout-content">
-    <article class="markdown-content mx-auto max-w-3xl py-8">
+    <article
+      class="markdown-content mx-auto max-w-3xl py-8"
+      data-pagefind-ignore={isAlias ? "all" : undefined}
+    >
       <a
         href={getAssetPath("notes")}
         class="not-prose font-mono text-xs uppercase tracking-wide text-clay hover:underline"
       >
-        ← Notes
+        ← {notesLabel}
       </a>
 
       <h1 class="not-prose mt-8 font-serif text-4xl leading-tight">
         {note.data.title}
       </h1>
+
+      <div class="not-prose mt-4">
+        <LanguageSwitch currentLang={note.data.lang} translations={translations} />
+      </div>
 
       <div class="not-prose mt-4 flex items-center gap-2">
         <time
@@ -85,13 +111,14 @@ const schema = {
         <meta data-pagefind-sort="date[content]" content={note.data.published.toISOString()} />
         <meta data-pagefind-filter="collection[content]" content={note.collection} />
         <meta data-pagefind-filter="category[content]" content={note.data.category} />
+        <meta data-pagefind-filter="language[content]" content={note.data.lang} />
         <Content />
       </aside>
 
       {backlinks.length > 0 && (
         <div class="not-prose mt-10 border-t border-border/50 pt-4">
           <h2 class="font-mono text-xs uppercase tracking-wide text-muted-foreground">
-            Backlinks
+            {backlinksLabel}
           </h2>
           <ul class="mt-2 space-y-1">
             {backlinks.map((link) => (

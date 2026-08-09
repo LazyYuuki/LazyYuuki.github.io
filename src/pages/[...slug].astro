@@ -2,28 +2,49 @@
 import { render } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import PageHeader from "@/components/PageHeader.astro";
-import { getAllPages, getPageSlugPath } from "@/utils/content";
+import LanguageSwitch from "@/components/LanguageSwitch.astro";
+import { getAllPages, getPageSlugPath, getPageUrl, getTranslationLinks } from "@/utils/content";
 
 export async function getStaticPaths() {
   const pages = await getAllPages();
 
-  return pages.map((page) => ({
-    params: { slug: getPageSlugPath(page.id, page.filePath) },
-    props: { page },
-  }));
+  return pages.flatMap((page) => {
+    const slug = getPageSlugPath(page.id, page.filePath);
+    const path = { params: { slug }, props: { page } };
+
+    return page.data.lang === "en" && slug.endsWith("/en")
+      ? [path, { params: { slug: slug.replace(/\/en$/, "") }, props: { page } }]
+      : [path];
+  });
 }
 
 const { page } = Astro.props;
 const { Content } = await render(page);
+const translations = getTranslationLinks(page, await getAllPages());
+const canonicalHref = getPageUrl(page.id, page.filePath);
+const isAlias = Astro.params.slug !== getPageSlugPath(page.id, page.filePath);
 ---
 
-<BaseLayout title={page.data.title}>
+<BaseLayout
+  title={page.data.title}
+  activePath={canonicalHref}
+  canonicalHref={canonicalHref}
+  lang={page.data.lang}
+  alternates={translations}
+>
   <div class="layout-content">
     <PageHeader title={page.data.title} />
 
-    <article data-pagefind-body class="markdown-content py-8">
+    <LanguageSwitch currentLang={page.data.lang} translations={translations} />
+
+    <article
+      data-pagefind-body
+      data-pagefind-ignore={isAlias ? "all" : undefined}
+      class="markdown-content py-8"
+    >
       <meta data-pagefind-meta="title[content]" content={page.data.title} />
       <meta data-pagefind-sort="date[content]" content={page.data.updated?.toISOString()} />
+      <meta data-pagefind-filter="language[content]" content={page.data.lang} />
       <Content />
     </article>
   </div>

@@ -3,9 +3,9 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import PageHeader from "@/components/PageHeader.astro";
 import PostFeed from "@/components/PostFeed.astro";
 import Section from "@/components/Section.astro";
-import { getAllPosts } from "@/utils/content";
+import { getPrimaryPosts } from "@/utils/content";
 
-const allPosts = await getAllPosts();
+const allPosts = await getPrimaryPosts();
 ---
 
 <BaseLayout title="Essays">

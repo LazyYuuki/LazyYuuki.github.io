@@ -3,7 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import PageHeader from "@/components/PageHeader.astro";
 import BrowseTabs from "@/components/BrowseTabs.astro";
 import BrowseList from "@/components/BrowseList.astro";
-import { getAllPosts, getAllNotes, getAllEntries } from "@/utils/content";
+import { getPrimaryPosts, getPrimaryNotes, getPrimaryEntries } from "@/utils/content";
 import { getMetaValues, filterByMetaSlug } from "@/utils/browse";
 import { getConfig } from "@/utils/config";
 import { getAssetPath } from "@/utils/url";
@@ -12,7 +12,7 @@ import type { BrowseIndexConfig } from "@/types";
 export async function getStaticPaths() {
   const siteConfig = await getConfig();
   const indexes = siteConfig.browse?.indexes ?? [];
-  const allEntries = await getAllEntries();
+  const allEntries = await getPrimaryEntries();
 
   return indexes.flatMap((index) =>
     getMetaValues(allEntries, index.key).map(({ value, slug }) => ({
@@ -30,9 +30,9 @@ interface Props {
 const { index, value } = Astro.props as Props;
 const { value: valueSlug } = Astro.params;
 
-const allEntries = await getAllEntries();
-const allPosts = await getAllPosts();
-const allNotes = await getAllNotes();
+const allEntries = await getPrimaryEntries();
+const allPosts = await getPrimaryPosts();
+const allNotes = await getPrimaryNotes();
 ---
 
 <BaseLayout title={`${value} · ${index.title}`}>
