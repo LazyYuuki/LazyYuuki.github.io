@@ -330,6 +330,11 @@ Manage the background server with `astro dev stop`, `astro dev status`, and `ast
 
 Use standard Git directly for version control in this repository. Do not use GitButler or the `but` CLI.
 
+## Private Braindump
+
+`src/content/notes/braindump.md` is a private, unrestrained working file. It is
+ignored by Git and must never be staged, committed, or included in patches.
+
 ## Documentation
 
 Full documentation: https://docs.astro.build
