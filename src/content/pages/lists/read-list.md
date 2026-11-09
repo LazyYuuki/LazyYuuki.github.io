@@ -14,6 +14,8 @@ It is just a place where I dump all the books I have read and want to read (non-
 
 # 2026
 
+- [x] [Utopia for Realist and How We Can Get There](/quotes/utopia-for-realist) - Rutger Bregman
+
 # 2025
 
 - [x] Writing an interpreter in Go - Thorsten Ball
@@ -36,4 +38,3 @@ It is just a place where I dump all the books I have read and want to read (non-
 - [x] Outlier: The story of success - Malcolm Gladwell
 - [x] Demand-side sales 101: Stop selling and help your customers make progress - Bob Moesta, Greg Engle
 - [x] The Subtle Art of Not Giving A Fuck: A counterintuitive approach to living a good life - Mark Manson
-

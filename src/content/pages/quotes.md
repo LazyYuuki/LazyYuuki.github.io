@@ -5,6 +5,7 @@ lang: en
 
 A collection of passages that I want to remember.
 
+- [Utopia for Realist](/quotes/utopia-for-realist)
 - [Fahrenheit 451](/quotes/fahrenheit-451)
 - [So Good They Can't Ignore You](/quotes/so-good-they-cant-ignore-you)
 - [Getting to YES](/quotes/getting-to-yes)
